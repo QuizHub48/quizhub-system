@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find 'F:\\\\Rushini\\\\3rd year\\\\PF\\\\Quiz system' -type f -name *)",
+      "Bash(find 'F:/Rushini/3rd year/PF/Quiz system' -name *.png -o -name *.jpg -o -name *.jpeg -o -name *.svg)",
+      "Bash(cmd /c \"dir /b \"\"F:\\\\Rushini\\\\3rd year\\\\PF\\\\Quiz system\\\\backend\\\\node_modules\\\\multer\"\" 2>nul && echo EXISTS || echo NOT_FOUND\")",
+      "Bash(cmd /c \"cd \"\"F:\\\\Rushini\\\\3rd year\\\\PF\\\\Quiz system\\\\backend\"\" && npm install multer 2>&1\")",
+      "Bash(cmd /c \"cd /d \"\"F:\\\\Rushini\\\\3rd year\\\\PF\\\\Quiz system\\\\backend\"\" && npm install multer\")",
+      "Bash(cmd /c \"if not exist \"\"F:\\\\Rushini\\\\3rd year\\\\PF\\\\Quiz system\\\\frontend\\\\src\\\\utils\"\" mkdir \"\"F:\\\\Rushini\\\\3rd year\\\\PF\\\\Quiz system\\\\frontend\\\\src\\\\utils\"\"\")",
+      "Bash(grep -r ap-export-btn 'F:\\\\Rushini\\\\3rd year\\\\PF\\\\Quiz system\\\\frontend\\\\src\\\\pages' --include=*.js)"
+    ]
+  }
+}
