@@ -5,8 +5,6 @@ const db = require('./config/db');
 
 const app = express();
 
-const cors = require("cors");
-
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:5173",
