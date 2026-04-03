@@ -5,6 +5,25 @@ const db = require('./config/db');
 
 const app = express();
 
+const cors = require("cors");
+
+const allowedOrigins = [
+  "http://localhost:3000",
+  "http://localhost:5173",
+  "https://rainbow-buttercream-c7218c.netlify.app"
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
+}));
+
 // Connect DB (Singleton)
 db.connect();
 
